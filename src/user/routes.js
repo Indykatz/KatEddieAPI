@@ -18,10 +18,10 @@ userRouter.get("/user", tokenCheck, login);
 
 userRouter.get("/users", getUsers); // works
 
-userRouter.patch("/user", hashPass, updateUser);
+userRouter.patch("/user", hashPass, updateUser); // works
 
 userRouter.delete("/user", tokenCheck, deleteUser);
 
-userRouter.delete("/users/:username", removeUser);
+userRouter.delete("/users/:username", removeUser); // doesnt work
 
 module.exports = userRouter;
